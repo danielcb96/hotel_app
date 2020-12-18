@@ -77,7 +77,7 @@ export default {
     processSearchHotel: function () {
       var self = this;
       axios
-        .post("http://127.0.0.1:8000/hotel/search/", self.hotel_in, {
+        .post("https://g1m2-e12-api.herokuapp.com/hotel/search/", self.hotel_in, {
           headers: {},
         })
         .then((result) => {
